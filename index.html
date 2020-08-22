@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTN Programacion Avanzada II - Calculadora JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body onload="init();">
+
+<div class="container bg-secondary">
+    <h3 class="text-center">UTN Calculadora</h3><br/>
+     <div class="row align-items-center bg-primary p-2 rounded">
+        <div class="col-md-4 mx-auto bg-dark">
+            <div class="table-responsive-sm">
+                <table class="table table-bordered table-sm">
+                    <thead ><span id="resultado" class="form-control mt-2"></span></thead>
+                    <tr>
+                        <td><input type="button"  class="btn btn-warning mt-1 "value="mrc"></td>
+                        <td><input type="button" class="btn btn-warning mt-1 " value="m-"></td>
+                        <td><input type="button" class="btn btn-warning mt-1 " value="m+"></td>
+                        <td><button class="btn btn-warning mt-1" id="C" >C </button></td>
+                    </tr>
+                    <tr>
+                        <td><button  class="btn btn-primary mt-1"  id="7">7</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="8">8</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="9">9</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="/">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-primary mt-1"  id="4">4</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="5">5</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="6">6</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="*">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  class="btn btn-primary mt-1" id="1" >1</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="2" >2</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="3" >3</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="-" >-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-primary mt-1"  id="0">0</button></td>
+                        <td><button class="btn btn-primary mt-1"  id=".">.</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="=">=</button></td>
+                        <td><button class="btn btn-primary mt-1"  id="+">+</button></td>
+                    </tr>
+                    
+                </table> 
+            </div>     
+        
+        </div><!--Cierro row gral-->
+     </div>
+<!--cierro el div container-->
+</div>
+
+<script src="source.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1L35yVt1mntt8iHcxwmi5hrMKHEZr7Qe7a83tlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+
+</body>
+</html>
